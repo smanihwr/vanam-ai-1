@@ -146,8 +146,17 @@
 
         .hero-content {
             max-width: 1200px;
-            padding: 0 5%;
+            padding: 2.5rem 5%;
             z-index: 1;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(49, 129, 100, 0.08);
+        }
+
+        .hero h1,
+        .hero p {
+            color: var(--text);
+            text-shadow: 0 2px 8px rgba(49, 129, 100, 0.10);
         }
 
         .hero h1 {
@@ -691,7 +700,7 @@
     <header>
         <nav>
             <div class="nav-left">
-                <div class="logo">VanamAI</div>
+                <div class="logo">Vanam AI</div>
             </div>
             <div class="nav-right">
                 <button class="hamburger" aria-label="Open menu"
@@ -822,7 +831,8 @@
                     <div class="collab-icon">🎓</div>
                     <h3>Students</h3>
                     <p>Gain hands-on experience with AI, Robotics, and Conservation Tech through real-world projects.
-                        <strong>Sponsorship available for select projects.</strong></p>
+                        <strong>Sponsorship available for select projects.</strong>
+                    </p>
                 </div>
                 <div class="collab-card">
                     <div class="collab-icon">💻</div>
@@ -843,10 +853,15 @@
         </div>
     </section>
     <!-- End of Join Our Community section -->
-    <div style="text-align:center; margin: 3rem 0; font-size: 1.2rem; color: var(--primary); font-weight: 600;">
-        Contact: <a href="mailto:vanamaiorg@gmail.com"
-            style="color: var(--primary); text-decoration: underline;">vanamaiorg@gmail.com</a>
-    </div>
+
+    <section id="contact" style="background: #f8f8f8; padding: 4rem 0;">
+        <div style="text-align:center; max-width: 600px; margin: 0 auto;">
+            <h2 style="color: var(--primary); font-size: 2rem; margin-bottom: 1rem;">Contact</h2>
+            <p style="font-size: 1.2rem; color: var(--text);">For all queries, reach us at:</p>
+            <a href="mailto:vanamaiorg@gmail.com"
+                style="color: var(--primary); font-size: 1.2rem; font-weight: 600; text-decoration: underline;">vanamaiorg@gmail.com</a>
+        </div>
+    </section>
 
     <footer>
         <p style="font-weight: 600; font-size: 1.1rem; color: white;">&copy; 2025 Vanam-AI</p>
