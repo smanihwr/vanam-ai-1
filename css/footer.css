@@ -1,0 +1,11 @@
+/* Footer styles */
+footer {
+    background: #e8f5ee;
+    color: var(--primary);
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

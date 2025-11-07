@@ -1,0 +1,14 @@
+/* CSS Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #318164;
+    --secondary: #318164;
+    --accent: #b7e2d0;
+    --text: #234d20;
+    --light: #ffffff;
+}
