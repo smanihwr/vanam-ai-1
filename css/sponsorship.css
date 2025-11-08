@@ -1,0 +1,162 @@
+.sponsorship {
+    padding: 4rem 0;
+    background: #f5faf8;
+}
+
+.sponsorship .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sponsorship h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.sponsorship h3 {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #2f855a;
+}
+
+.sponsorship p,
+.sponsorship li {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: #1f2933;
+}
+
+.sponsorship ul,
+.sponsorship ol {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.sponsorship ul li,
+.sponsorship ol li {
+    margin-bottom: 0.5rem;
+}
+
+.sponsorship .note {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+    background: #e8f5ee;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+}
+
+.sponsorship .pill-label {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background: #e8f5ee;
+    color: var(--primary);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.sponsorship .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 900px) {
+    .sponsorship .grid {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .sponsorship .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sponsorship .card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.8rem 1.6rem;
+    box-shadow: 0 4px 18px rgba(49, 129, 100, 0.08);
+    border: 1px solid #e8f5ee;
+    transition: all 0.25s ease;
+}
+
+.sponsorship .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 26px rgba(49, 129, 100, 0.16);
+    border-color: var(--primary);
+}
+
+.sponsorship .card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.4rem;
+}
+
+.sponsorship .card-emoji {
+    font-size: 1.4rem;
+}
+
+.sponsorship .highlight {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.sponsorship .apply-cta {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sponsorship .apply-cta a {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.6rem;
+    border-radius: 999px;
+    background: var(--primary);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(49, 129, 100, 0.25);
+    transition: all 0.25s ease;
+}
+
+.sponsorship .apply-cta a span {
+    margin-left: 0.45rem;
+}
+
+.sponsorship .apply-cta a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(49, 129, 100, 0.32);
+}
+
+.sponsorship .apply-cta p {
+    flex: 1 1 100%;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+@media (max-width: 768px) {
+    .sponsorship {
+        padding: 3rem 1.25rem;
+    }
+
+    .sponsorship h2 {
+        font-size: 1.8rem;
+    }
+}

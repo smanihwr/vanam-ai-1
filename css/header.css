@@ -50,6 +50,7 @@ nav ul {
     gap: 2.5rem;
     align-items: center;
     transition: max-height 0.3s ease;
+    white-space: nowrap;
 }
 
 nav a {
@@ -62,6 +63,26 @@ nav a {
 
 nav a:hover {
     color: var(--secondary);
+}
+
+/* Highlighted nav link (Student Sponsorship) */
+nav a.highlight {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    background: #fffbf0;
+    color: #e67e22;
+    font-weight: 600;
+    box-shadow: 0 0 0 1px rgba(230, 126, 34, 0.18);
+}
+
+nav a.highlight:hover {
+    background: #e67e22;
+    color: #ffffff;
+    box-shadow: 0 6px 14px rgba(230, 126, 34, 0.35);
+    transform: translateY(-1px);
 }
 
 .hamburger {

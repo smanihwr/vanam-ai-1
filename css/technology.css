@@ -1,5 +1,4 @@
-/* Technology section styles */
-.technology {
+Technology section styles .technology {
     background: var(--light);
 }
 
@@ -35,6 +34,18 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s;
+}
+
+/* Ensure the AI camera trap image uses full card space like others */
+.tech-image.ai-camera-trap {
+    height: 240px;
+}
+
+.tech-image.ai-camera-trap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .tech-card:hover .tech-image img {
