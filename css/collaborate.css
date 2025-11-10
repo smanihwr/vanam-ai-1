@@ -69,6 +69,15 @@
     color: #4a5568;
 }
 
+.collaborate-intro {
+    color: #318164;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: 0.75rem auto 0;
+    text-align: center;
+}
+
 @media (max-width: 900px) {
     .collab-grid {
         grid-template-columns: repeat(2, minmax(220px, 1fr));

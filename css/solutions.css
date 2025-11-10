@@ -1,0 +1,122 @@
+/* Our Solutions section - styled similar to collaborate */
+.solutions {
+    padding: 4rem 0;
+    background: #f5faf8;
+}
+
+.solutions .section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.solutions h2 {
+    color: var(--primary);
+}
+
+.solutions .section-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background: #e8f5ee;
+    color: var(--primary);
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.solutions-intro {
+    color: #4a5568;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 840px;
+    margin: 0.75rem auto 0;
+}
+
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+}
+
+.solutions-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.8rem 1.6rem;
+    box-shadow: 0 4px 18px rgba(49, 129, 100, 0.08);
+    border: 1px solid #e8f5ee;
+    color: #1f2933;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    transition: all 0.25s ease;
+}
+
+.solutions-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 26px rgba(49, 129, 100, 0.16);
+    border-color: var(--primary);
+}
+
+.solutions-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background: #e8f5ee;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.solutions-card h3 {
+    font-size: 1.05rem;
+    margin: 0.25rem 0 0.2rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.solutions-card p {
+    font-size: 0.96rem;
+    line-height: 1.7;
+    color: #4a5568;
+}
+
+.solutions-cta {
+    margin-top: 3rem;
+    padding: 2rem 2.2rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, rgba(49, 129, 100, 0.06), rgba(31, 111, 86, 0.14));
+    border: 1px solid #cce7dd;
+    text-align: center;
+}
+
+.solutions-cta h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 0.6rem;
+}
+
+.solutions-cta p {
+    font-size: 0.98rem;
+    line-height: 1.8;
+    color: #2d3748;
+}
+
+@media (max-width: 900px) {
+    .solutions-grid {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .solutions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solutions-cta {
+        padding: 1.6rem 1.4rem;
+    }
+}
