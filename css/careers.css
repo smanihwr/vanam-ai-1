@@ -1,0 +1,345 @@
+/* Careers section styles */
+#careers {
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+    padding: 4rem 5%;
+}
+
+#careers .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.careers-intro {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.careers-intro p {
+    margin: 0;
+}
+
+.job-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e5f7eb;
+}
+
+.job-title {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.job-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8fffe;
+    border-radius: 12px;
+    border: 1px solid #e5f7eb;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0.5rem;
+}
+
+.detail-icon {
+    font-size: 2.2rem;
+    flex-shrink: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.detail-item > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-item strong {
+    display: block;
+    color: var(--primary);
+    margin-bottom: 0.2rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.detail-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.requirements,
+.responsibilities {
+    margin-bottom: 1.8rem;
+}
+
+.requirements h4,
+.responsibilities h4 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #e5f7eb;
+}
+
+.requirements ul,
+.responsibilities ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requirements li,
+.responsibilities li {
+    padding: 0.6rem 0 0.6rem 2.5rem;
+    position: relative;
+    color: var(--text);
+    line-height: 1.5;
+    border-bottom: 1px solid #f0f9f4;
+    font-size: 1rem;
+}
+
+.requirements li:last-child,
+.responsibilities li:last-child {
+    border-bottom: none;
+}
+
+.requirements li:before,
+.responsibilities li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.requirements li strong {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.apply-section {
+    text-align: center;
+    padding: 2rem 2.5rem;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+    border-radius: 12px;
+    border: 2px dashed var(--secondary);
+    margin-top: 0.5rem;
+}
+
+.apply-section h4 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.apply-section p {
+    color: var(--text);
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.email-id {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    background: #f0fdf4;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    border: 1px solid #e5f7eb;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.note {
+    margin-top: 1.2rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    #careers {
+        padding: 2.5rem 4%;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .careers-intro {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .job-card {
+        padding: 1.5rem 1.2rem;
+        border-radius: 12px;
+    }
+    
+    .job-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .job-details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .detail-item {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0.8rem;
+        padding: 0.3rem;
+    }
+    
+    .detail-icon {
+        font-size: 1.6rem;
+        margin-top: 0.1rem;
+    }
+    
+    .detail-item strong {
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .detail-item p {
+        font-size: 0.9rem;
+    }
+    
+    .requirements h4,
+    .responsibilities h4 {
+        font-size: 1.15rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .requirements li,
+    .responsibilities li {
+        padding: 0.6rem 0 0.6rem 2rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .requirements li:before,
+    .responsibilities li:before {
+        font-size: 1.1rem;
+        top: 0.6rem;
+    }
+    
+    .apply-section {
+        padding: 1.5rem 1.2rem;
+    }
+    
+    .apply-section h4 {
+        font-size: 1.3rem;
+    }
+    
+    .apply-section p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
+    .email-id {
+        font-size: 1.1rem;
+        padding: 0.7rem 1.5rem;
+    }
+    
+    .note {
+        font-size: 0.85rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    #careers {
+        padding: 2rem 3%;
+    }
+    
+    .job-card {
+        padding: 1.2rem 1rem;
+    }
+    
+    .job-title {
+        font-size: 1.35rem;
+    }
+    
+    .job-details {
+        padding: 0.8rem;
+    }
+    
+    .detail-item {
+        gap: 0.6rem;
+    }
+    
+    .detail-icon {
+        font-size: 1.4rem;
+    }
+    
+    .requirements li,
+    .responsibilities li {
+        padding-left: 1.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .email-id {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

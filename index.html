@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/technology.css">
     <link rel="stylesheet" href="css/solutions.css">
     <link rel="stylesheet" href="css/collaborate.css">
+    <link rel="stylesheet" href="css/careers.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/sponsorship.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -27,20 +28,22 @@
     <div id="technology"></div>
     <div id="solutions"></div>
     <div id="collaborate"></div>
+    <div id="careers"></div>
     <div id="contact"></div>
     <div id="sponsorship"></div>
     <div id="footer"></div>
     <script>
-        // Simple JS to load partials
-        const partials = [
-            'header', 'hero', 'mission', 'technology', 'solutions', 'collaborate', 'contact', 'sponsorship', 'footer'
-        ];
-        partials.forEach(name => {
-            fetch(`partials/${name}.html`)
-                .then(res => res.text())
-                .then(html => document.getElementById(name).innerHTML = html);
-        });
         document.addEventListener('DOMContentLoaded', function () {
+            // Simple JS to load partials
+            const partials = [
+                'header', 'hero', 'mission', 'technology', 'solutions', 'collaborate', 'careers', 'contact', 'sponsorship', 'footer'
+            ];
+            partials.forEach(name => {
+                fetch(`partials/${name}.html`)
+                    .then(res => res.text())
+                    .then(html => document.getElementById(name).innerHTML = html);
+            });
+            
             setTimeout(() => {
                 // Hamburger menu toggle
                 const hamburger = document.querySelector('.hamburger');
